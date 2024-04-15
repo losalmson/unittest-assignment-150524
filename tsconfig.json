@@ -18,7 +18,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "esModelInterop": true
+    "esModuleInterop": true
   },
   "include": ["src"]
 }
