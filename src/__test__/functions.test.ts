@@ -25,32 +25,20 @@ test("it should be marked as done correctly", () => {
     //Assert
     expect(todo.done).toBeTruthy();
     });
-});
-
-test("it should remove all todos from the list", () => {
-    //Assign 
-    const todosCount = 5;
-    const todos: Todo[] = [];
-
-    for (let i = 1; i <= todosCount; i++) {
-        todos.push({ text: `Todo ${i}`, done: i % 2 === 0 });
-    }
+    test("it should remove all todos from the list", () => {
+        //Assign 
+        const todosCount = 5;
+        const todos: Todo[] = [];
     
-    //Act
-    removeAllTodos(todos);
-
-    //Assert 
-    expect(todos.length).toBe(0);
+        for (let i = 1; i <= todosCount; i++) {
+            todos.push({ text: `Todo ${i}`, done: i % 2 === 0 });
+        }
+    
+        //Act
+        removeAllTodos(todos);
+    
+        //Assert 
+        expect(todos.length).toBe(0);
+    });
 });
-
-
-
-
-// addTodo
-// Ska ha en text 
-// Längre än i 2 
-// Vad händer om det inte funkar 
-
-
-
 
