@@ -1,3 +1,4 @@
+// Övningsfil Unit tests 150524
 import { addTodo, changeTodo, removeAllTodos } from "../ts/functions";
 import { Todo } from "../ts/models/todo";
 
